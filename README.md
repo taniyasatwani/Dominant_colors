@@ -3,15 +3,15 @@ An unsupervised learning model which extracts the dominant colours from a pictur
 
 
 ## Demo 
-`Input Image`
+`Input Image`  <br>
 ![](img.jpg) <br>
-`Extracted palette of 8 dominant colors`
+`Extracted palette of 8 dominant colors` <br>
 ![](dominantcolors.PNG) <br>
-`Fraction of each dominant colors`
+`Fraction of each dominant colors` <br>
 ![](fractionofdominatcolors.PNG) <br>
 
-## Inspiration
-Stock markets help companies to raise capital and generates personal wealth. The entire idea of predicting stock prices is to gain significant profits. Predicting how the stock market will perform is a hard task to do. There are other factors involved in the prediction, such as physical and psychological factors, rational and irrational behavior, and so on. All these factors combine to make share prices dynamic and volatile. This makes it very difficult to predict stock prices with high accuracy. 
+## Application
+When a image has large range of colours we can find the dominant colours and display the image only with dominant colour in image.
 
 ## Overview
-Data is extracted using `tiingo api` of AAPL and is saved in `AAPL1.csv`. I used the `Close` column to train my model.The Close column refers to the price of an individual stock when the stock exchange closed the market for the day. Data is splited using the date column and is trained using `LSTM`. The model taked 100 days of input and predicts the stock of next day. In this project the model predicts stock prices of 30 days.
+Read the image using `opencv`. `Opencv` works in BGR, so convert it to RGB for `matplotlib`. Resize the image into lower dimensions and reshape it to provide input to `K means clustering`. Plot all the clusters and calculate the fraction of each cluster color in the image.
