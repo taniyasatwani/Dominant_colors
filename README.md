@@ -2,12 +2,12 @@
 An unsupervised learning model which extracts the dominant colours from a picture using opencv. 
 
 
-## Demo - Input Image
-
+## Demo 
+`Input Image`
 ![](img.jpg) <br>
-## Extracted palette of 8 dominant colors
+`Extracted palette of 8 dominant colors`
 ![](dominantcolors.PNG) <br>
-## Fraction of each dominant colors
+`Fraction of each dominant colors`
 ![](fractionofdominatcolors.PNG) <br>
 
 ## Inspiration
